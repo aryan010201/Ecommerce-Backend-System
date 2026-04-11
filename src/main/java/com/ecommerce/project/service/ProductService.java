@@ -13,5 +13,5 @@ public interface ProductService {
 
     ProductResponse getAllProducts();
 
-    ProductResponse getAllProductsByCategory(Long categoryId);
+    ProductResponse searchByCategory(Long  categoryId);
 }

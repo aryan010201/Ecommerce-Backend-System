@@ -49,7 +49,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductResponse getAllProductsByCategory(Long categoryId) {
-        return null;
+    public ProductResponse searchByCategory(Long categoryId) {
+        List<Product> products=productRepository.findAll().stream().filter((product)->(product.getCategory().getCategoryID()==categoryId)).toList();
+        List<ProductDTO> productDTOS=products.stream().map((product)->modelMapper.map(product,ProductDTO.class)).toList();
+        ProductResponse productResponse=new ProductResponse();
+        productResponse.setContent(productDTOS);
+        return productResponse;
     }
 }
