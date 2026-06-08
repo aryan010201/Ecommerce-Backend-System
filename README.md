@@ -4,7 +4,7 @@ A full-featured RESTful e-commerce backend built with **Spring Boot 4**, featuri
 
 ---
 
-## 🚀 Tech Stack
+## 1) Tech Stack
 
 | Technology | Details |
 |---|---|
@@ -20,7 +20,7 @@ A full-featured RESTful e-commerce backend built with **Spring Boot 4**, featuri
 
 ---
 
-## 📁 Project Structure
+## 2) Project Structure
 
 ```
 src/main/java/com/ecommerce/project/
@@ -36,8 +36,6 @@ src/main/java/com/ecommerce/project/
 ```
 
 ---
-
-## ⚙️ Getting Started
 
 ### Prerequisites
 
@@ -61,7 +59,7 @@ H2 Console (dev): `http://localhost:8080/h2-console`
 
 ---
 
-## 🔐 Authentication
+## 3) Authentication
 
 This project uses **JWT stored in HTTP-only cookies**. After signing in, the token is automatically attached to every subsequent request via cookie.
 
@@ -75,9 +73,9 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 
 ---
 
-## 📡 API Endpoints
+## 4) API Endpoints
 
-### 🔑 Auth — `/api/auth`
+### i) Auth — `/api/auth`
 
 | Method | Endpoint | Access | Description |
 |---|---|---|---|
@@ -107,7 +105,7 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 
 ---
 
-### 📦 Categories — `/api/...category`
+### ii) Categories — `/api/...category`
 
 | Method | Endpoint | Access | Description |
 |---|---|---|---|
@@ -133,7 +131,7 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 
 ---
 
-### 🛍️ Products — `/api/...products`
+### iii) Products — `/api/...products`
 
 | Method | Endpoint | Access | Description |
 |---|---|---|---|
@@ -158,7 +156,7 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 
 ---
 
-### 🛒 Cart — `/api/carts`
+### iv) Cart — `/api/carts`
 
 | Method | Endpoint | Access | Description |
 |---|---|---|---|
@@ -170,7 +168,7 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 
 ---
 
-### 📬 Address — `/api/addresses`
+### v) Address — `/api/addresses`
 
 | Method | Endpoint | Access | Description |
 |---|---|---|---|
@@ -195,7 +193,7 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 
 ---
 
-### 📋 Orders — `/api/order`
+### vi) Orders — `/api/order`
 
 | Method | Endpoint | Access | Description |
 |---|---|---|---|
@@ -212,32 +210,7 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 }
 ```
 
----
-
-## 📸 API Screenshots (Postman)
-
-> Add your Postman screenshots in the `images/` folder and reference them below.
-
-### Signup
-![Signup](images/signup.png)
-
-### Signin
-![Signin](images/signin.png)
-
-### Get All Products
-![Get Products](images/get-products.png)
-
-### Add to Cart
-![Add to Cart](images/add-to-cart.png)
-
-### Place Order
-![Place Order](images/place-order.png)
-
-> 💡 **Tip:** Export your Postman collection as a `.json` file and commit it to the repo — other developers can import it and start testing instantly without setting up requests manually.
-
----
-
-## 🧩 Features
+## 5) Features
 
 - ✅ JWT Authentication with HTTP-only cookies
 - ✅ Role-based authorization (Admin, Seller, User)
@@ -251,7 +224,3 @@ This project uses **JWT stored in HTTP-only cookies**. After signing in, the tok
 - ✅ Input validation with Bean Validation
 
 ---
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
